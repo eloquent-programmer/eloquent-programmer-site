@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+<head>
+  <title>
+    {{- block "title" . -}}
+      {{ .Site.Title }}{{ with .Params.Title }} | {{ . }}{{ end }}
+    {{- end -}}
+  </title>
+
+  <meta name="description" content='{{ block "description" . }}{{- .Site.Params.Description -}}{{ end }}'>
+
+  {{ partial "head/meta.html" . }}
+
+  {{ partial "head/head-includes.html" . }}
+
+  {{ partial "head/static-links.html" }}
+
+  {{ block "canonical" . }}
+    <link rel="canonical" href="{{ .Permalink }}">
+  {{ end }}
+</head>
+<body>
+
+  {{ block "header" . }}
+    {{ partial "body/header.html" . }}
+  {{ end }}
+
+  <main id="main">
+    <div id="content-wrapper">
+      {{ block "main" . }}{{ end }}
+    </div>
+  </main>
+
+  {{ partial "body/footer.html" . }}
+</body>
+</html>

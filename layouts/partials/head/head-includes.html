@@ -1,0 +1,4 @@
+{{ $stylesheet := .Site.Data.webpack_assets.main }}
+{{ with $stylesheet.css }}
+  <link href="{{ . | relURL }}" rel="stylesheet" type="text/css">
+{{ end }}

@@ -1,0 +1,20 @@
+{{ with .Site.Params.twitter }}
+  <a aria-label="twitter follow" href="{{ . }}" class="social-icon social-icon-twitter" title="Twitter link">
+    {{ partial "svg/twitter.svg" }}
+  </a>
+{{ end }}
+{{ with .Site.Params.github }}
+  <a aria-label="github follow" href="{{ . }}" class="social-icon social-icon-github" title="Github link">
+    {{ partial "svg/github.svg" }}
+  </a>
+{{ end }}
+{{ with .Site.Params.facebook }}
+  <a aria-label="facebook follow" href="{{ . }}" class="social-icon social-icon-facebook" title="Facebook link">
+    {{ partial "svg/facebook.svg" }}
+  </a>
+{{ end }}
+{{ with .Site.Params.instagram }}
+  <a aria-label="instagram follow" href="{{ . }}" class="social-icon social-icon-instagram" title="instagram link">
+    {{ partial "svg/instagram.svg" }}
+  </a>
+{{ end }}

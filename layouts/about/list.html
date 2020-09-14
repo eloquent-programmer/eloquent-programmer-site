@@ -1,0 +1,7 @@
+{{ define "main" }}
+  {{ range .Paginator.Pages }}
+    <article class="article-card">
+      {{- partial "about.html" . -}}
+    </article>
+  {{ end }}
+{{ end }}

@@ -1,0 +1,13 @@
+#main {
+  background-color  :color-picker('background', 'base', $opacity: 'dark');
+
+  #content-wrapper {
+    max-width         :$small-width;
+    margin            :0 auto;
+    padding           :0.50rem;
+
+    @media #{$large-screen} {
+      max-width :$medium-width;
+    }
+  }
+}

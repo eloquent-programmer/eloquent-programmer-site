@@ -1,0 +1,25 @@
+{{ define "canonical" }}
+  {{ if .Params.canonical }}
+    <link rel="canonical" href="{{ .Permalink }}">
+  {{ end }}
+{{ end }}
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define "description" }}
+  {{- .Params.description -}}
+{{ end }}
+{{ define "main" }}
+<article class="article-card">
+  <header class="header">
+    {{ if .Date }}
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+    {{ end }}
+    <h1>
+      {{ .Title }}
+    </h1>
+  </header>
+  <hr>
+  <div class="article-content">
+    <p>{{ .Content }}</p>
+  </div>
+</article>
+{{ partial "read-suggestions.html" . }}{{ end }}

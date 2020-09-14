@@ -1,0 +1,39 @@
+// #sidebar {
+//   font-family           :map-get($font-families, 'sidebar');
+//   height                :100%;
+//   position              :fixed;
+//   box-shadow            :map-get($shadows, 'sidebar');
+//   color                 :$sidebar-base-color;
+  
+
+//   h1 {
+//     text-align      :left;
+//     font-size       :map-get($headings-font-size, 'h1');
+//     font-weight     :700;
+//     margin-top      :35px;
+//     letter-spacing  :0.1em;
+//     // background: #136a8a;  /* fallback for old browsers */
+//     // background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+//     // background: linear-gradient(to left, rgb(38, 120, 113, 0.5), rgb(19, 106, 138, 0.2)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+//     padding-left    :35px;
+//     line-height     :$line-height-headings;
+//   }
+
+//   h6 {
+//     font-size                 :map-get($headings-font-size, 'h6');
+//     background                :linear-gradient(230deg, rgb(48, 139, 132), rgb(19, 106, 138));
+//     background-clip           :text;
+//     -webkit-text-fill-color   :transparent;
+//     font-style                :italic;
+//     padding-left              :35px;
+//     margin-top                :10px;
+//     letter-spacing            :0.1em;
+//     line-height               :$line-height-headings;
+//   }
+// }
+
+// @media #{$xlarge-and-up} {
+//   #sidebar {
+//     @include sidebar-xlg;
+//   }
+// }

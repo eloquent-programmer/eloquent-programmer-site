@@ -1,0 +1,28 @@
+#footer {
+  background-color  :color-picker('foreground', 'base');
+  color             :color-picker('background', 'light');
+  padding           :35px;
+  max-width         :100%;
+
+  a {
+    color           :color-picker('background', 'light');
+    text-transform  :initial;
+
+    &:after {
+      content :none;
+    }
+  }
+
+  .container {
+    margin  :0 auto;
+    text-align: center;
+
+    .social-links {
+
+      .social-icon {
+        margin-right  :10px;
+      }
+    }
+  }
+
+}

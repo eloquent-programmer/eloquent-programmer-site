@@ -1,0 +1,27 @@
+$ep-color-pallete: (
+  'primary': (
+    'base'  :#00ADB5,
+    'dark'  :#00676C,
+    'light' :#7FD5DA
+  ),
+  'accent': (
+    'base'  :#0037C2,
+    'dark'  :#001B61,
+    'light' :#7F9BE0
+  ),
+  'foreground': (
+    'base'  :#284b4d,
+    'dark'  :#1B3233,
+    'light' :#71D4D9
+  ),
+  'background': (
+    'base'  :#f8fbfb,
+    'dark'  :#7C7D7D,
+    'light' :#fff
+  )
+);
+
+$ep-color-opacity: (
+  'light' :0.8, // Used with lighter colors
+  'dark'  :0.4  // Used with darker colors
+);

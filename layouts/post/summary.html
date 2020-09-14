@@ -1,0 +1,27 @@
+<div class="article-card">
+  
+  <div class="header">
+    {{ if .Date }}
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+    {{ end }}
+    <h2 class="article-card-title">
+      {{ .Title }}
+    </h2>
+  </div>
+  <div class="content">
+    <p>{{ .Params.excerpt }}</p>
+  </div>
+  {{ if .Params.publisherInfo }}
+  <div class="article-publisher-meta">
+    {{ .Params.publisherInfo }}
+  </div>
+  {{ end }}
+  <div class="footer">
+    <div class="tags">
+      <a href="#" rel="tag">Tag 1</a>
+      <a href="#" rel="tag">Tag 2</a>
+    </div>
+    <a href="{{ .Permalink }}">Continue Reading...</a>
+  </div>
+
+</div>

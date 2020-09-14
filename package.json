@@ -1,0 +1,19 @@
+{
+  "name": "eloquent-programmer-website",
+  "version": "1.0.0",
+  "description": "Eloquent Programmer Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p start:*",
+    "start:hugo": "hugo server -D",
+    "start:webpack": "npm run --prefix src start",
+    "build": "run-s build:*",
+    "build:hugo": "hugo",
+    "build:webpack": "npm run --prefix src build"
+  },
+  "author": "Helder Ferreira",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

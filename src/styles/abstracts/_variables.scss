@@ -1,0 +1,106 @@
+/**
+*********************************
+*           VARIABLES           *
+*********************************
+* - Typography
+* - Colors
+* - Paths
+* - Media query breakpoints
+* - Sidebar layout
+* - Main layout
+*/
+
+/**
+**********************************
+*           Typography           *
+**********************************
+* - Font size and line height
+* - Base line height
+* - Base font family
+* - Headings
+*/
+
+// Font size and line height
+$base-font-size   :1rem; // 16px
+$base-line-height :1.25 * $base-font-size;
+
+$text-settings: (
+  'xs': (
+    font-size   :.75rem, // 12px,
+    line-height :$base-line-height
+  ),
+  'sm': (
+    font-size   :.875rem, // 14px,
+    line-height :$base-line-height
+  ),
+  'base': (
+    font-size   :$base-font-size, // 16px
+    line-height :$base-line-height
+  ),
+  'md': (
+    font-size   :1.125rem, // 18px,
+    line-height :$base-line-height * 2
+  ),
+  'lg': (
+    font-size   :1.333rem, // 20px,
+    line-height :$base-line-height * 2
+  ),
+  'xlg': (
+    font-size   :1.777rem, // 24px,
+    line-height :$base-line-height * 2
+  )
+);
+
+
+// Base font family
+$font-family-system       :-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$font-family-sans-serif   :Roboto, Lato, 'Open Sans', Helvetica, Arial, sans-serif;
+$font-family-mono         :Menlo, Monaco, "Courier New", monospace;
+
+$font-family-base         :$font-family-sans-serif;
+$font-family-alt          :$font-family-system;
+
+
+/**
+******************************
+*           Colors           *
+******************************
+*/
+
+$color-primary: 'xpto';
+$color-secondary: 'xpto2';
+$sidebar-shadow-color       :rgba(51,51,51,1);
+$sidebar-bg-color-1         :rgba(0, 0, 0, 0.8); 
+$sidebar-bg-color-2         :#100e17;
+$sidebar-base-color         :#fff;
+$article-card-bg-color      :#fff;
+$article-card-shadow-color  :rgba(0,0,0,.2);
+
+// shadows
+$shadows: (
+  'sidebar'       :3px 0px 4px -2px $sidebar-shadow-color,
+  'article-card'  :0 4px 6px 0 $article-card-shadow-color
+);
+
+/**
+*****************************
+*           Paths           *
+*****************************
+*/
+
+$img-path                 :'../images';
+
+/**
+***********************************************
+*           Media query breakpoints           *
+***********************************************
+* - Breakpoints Map
+*/
+$small-width  :576px;
+$medium-width :768px;
+$large-width  :992px;
+
+$large-screen   :"screen and (min-width : #{ $large-width })";
+$medium-sreen   :"screen and (min-width : #{ $medium-width })";
+$small-screen   :"screen and (min-width : #{ $small-width })";
+

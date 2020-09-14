@@ -1,0 +1,65 @@
+a {
+  color           :color-picker('foreground', 'dark');
+  text-decoration :none;
+  text-transform  :uppercase;
+
+  &:hover,
+  &:active {
+    color           :color-picker('primary', 'dark');
+  }
+
+  &:after {
+    @include bottom-line-effect()
+  }
+
+  &:hover{
+    &:after {
+      transform :scaleX(1);
+    }
+  }
+}
+
+.social-links {
+  svg {
+    width   :30px;
+    height  :30px;
+  }
+}
+
+.social-icon {
+  fill: white;
+
+  &-twitter {
+
+    &:hover,
+    &:focus {
+      fill  :#1da1f2;
+    }
+  }
+
+  &-github {
+
+    &:hover,
+    &:focus {
+      fill  :#000;
+    }
+  }
+
+  &-instagram {
+
+    &:hover,
+    &:focus {
+      fill  :#C13584;
+    }
+  }
+
+  &-facebook {
+
+    &:hover,
+    &:focus {
+      fill  :#4267B2;
+    }
+  }
+
+  
+ }

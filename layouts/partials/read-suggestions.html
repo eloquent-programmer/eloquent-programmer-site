@@ -1,0 +1,15 @@
+<section class="article-card">
+  <h2>You might also like...</h2>
+  <hr>
+  <ul class="extra-content-items">
+    {{ $extraContent := $.Params.extraContent }}
+    {{ range $element := $extraContent }}
+    <li>
+      <a href="{{ $element.url }}" target="_blank" rel="noopener">{{ $element.title }}</a>
+      {{ if $element.extras}}
+      {{ $element.extras }}
+      {{end}}
+    </li>
+    {{end}}
+  </ul>
+</section>

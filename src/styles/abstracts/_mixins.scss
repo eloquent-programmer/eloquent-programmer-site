@@ -1,0 +1,34 @@
+// This will ensure we keep the same proportions of the font size.
+@mixin font-size ($sizevalue: 1.6) { // default to 16 px
+  font-size: ($sizevalue * 10) + px;
+  font-size: $sizevalue + rem;
+};
+
+// Sidebar
+@mixin sidebar-xlg {
+  width                 :map-get($sidebar, xlg-screen-width);
+  background-image      :map-get($sidebar, background-image);
+  background-size       :cover;
+  background-attachment :fixed;
+  background-position   :right;
+}
+
+// Main
+@mixin main-xs {
+  float :right;
+  width :calc(100% - #{map-get($sidebar, xlg-screen-width)});
+}
+
+// This is used in conjunction with functions text-scale and line-height from _functions.scss file
+@mixin text-setting($size) {
+  font-size   :text-size($size);
+  line-height :line-height($size);
+}
+
+@mixin bottom-line-effect($scale: 0) {
+  display       :block;
+  content       :'';
+  border-bottom :2px solid color-picker('primary', 'dark');  
+  transform     :scaleX($scale);  
+  transition    :transform 250ms ease-in-out;
+}

@@ -1,0 +1,35 @@
+.article-card {
+  background-color  :color-picker('background', 'light');
+  box-shadow        :map-get($shadows, article-card);
+  display           :block;
+  margin            :$base-line-height auto;
+  padding           :25px;
+
+  .header {
+    color         :color-picker('primary', 'dark');
+    margin-bottom :0.5rem;
+  
+    time {
+      @include text-setting('sm')
+    }
+
+    h2 {
+      font-weight :bold;
+    }
+  }
+
+  .footer {
+    margin-top  :$base-line-height;
+
+    .tags {
+      width :80%;
+      display :inline-block;
+      width :75%;
+    }
+
+    a {
+      display: inline-block;
+    }
+  }
+
+}

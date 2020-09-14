@@ -1,0 +1,11 @@
+html,
+body {
+  @include text-setting('base');
+  font-family: $font-family-base;
+}
+
+h1 { @include text-setting('xlg') }
+
+h2 { @include text-setting('lg') }
+
+

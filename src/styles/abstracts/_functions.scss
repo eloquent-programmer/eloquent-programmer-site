@@ -1,0 +1,34 @@
+// By default select the base color key from _colors.scss colors pallete
+$ep-color-key: 'base' !default;
+
+@function color-picker($name: 'primary', $variant: $ep-color-key, $opacity: 1) {
+  $color: null;
+
+  // Get the color pallete
+  $color-pallete: map-get($ep-color-pallete, $name);
+
+  // Get and set the color variant from the color pallete
+  @if $color-pallete {
+    $color: map-get($color-pallete, $variant);
+  }
+
+  // Get the alpha value or the pre defined opacity level from $ep-color-opacity 
+  $alpha: if(typeof($opacity) == 'number', $opacity, map-get($ep-color-opacity, $opacity));
+
+  // Set the alpha of the color
+  @if $alpha {
+    $color: rgba($color, $alpha);
+  }
+
+  @return $color;
+}
+
+// This is used in conjunction with @mixin text-setting from _mixins.scss and map $text-settings from _variables.scss files
+@function text-size($size) {
+  @return map-get(map-get($text-settings, $size), 'font-size');
+}
+
+@function line-height($size) {
+  @return map-get(map-get($text-settings, $size), 'line-height');
+}
+

@@ -1,0 +1,49 @@
+#header {
+  
+  .head {
+    background-color  :color-picker('background', 'base');
+    color             :color-picker('foreground', 'base');
+    padding           :90px 0;
+
+    h1 {
+      @include text-setting('xlg');
+      text-align  :center;
+      font-weight :500;
+    }
+  
+    .tagline {
+      @include text-setting('base');
+      text-align  :center;
+    }
+  }
+
+  .navbar {
+    width         :100%;
+    border-bottom :2px solid color-picker('background', 'base');
+
+    ul {
+      margin      :0 auto;
+      text-align  :center;
+
+      li {
+        display :inline-block;
+        margin  :0;
+
+        a {
+          display         :block;
+          padding         :20px 30px;
+          margin          :0;
+        }
+
+        .active {
+          &:after {
+            @include bottom-line-effect(1)
+          }
+        }
+
+      }
+
+    }
+
+  }
+}

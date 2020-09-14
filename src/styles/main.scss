@@ -1,0 +1,21 @@
+@import 
+  'abstracts/_variables',
+  'abstracts/_colors',
+  'abstracts/_mixins',
+  'abstracts/_functions';
+
+@import
+  'base/_reset',
+  'base/_typography',
+  'base/_fonts',
+  'base/global';
+
+
+@import
+  'layout/_main',
+  'layout/_header',
+  'layout/_footer';
+
+@import 'components/article-card';
+
+@import 'pages/_article.scss';
