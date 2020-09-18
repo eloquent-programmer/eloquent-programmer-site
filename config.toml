@@ -4,7 +4,7 @@ languageCode = "en-us"
 
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
-googleAnalytics = ""
+googleAnalytics = "UA-178442559-1"
 enableRobotsTXT = true
 
 [permalinks]
