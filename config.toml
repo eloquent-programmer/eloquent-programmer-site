@@ -1,5 +1,5 @@
 title = "Eloquent Programmer"
-baseURL = "/"
+baseURL = "https://eloquentprogrammer.com"
 languageCode = "en-us"
 
 MetaDataFormat = "yaml"
@@ -18,7 +18,6 @@ enableRobotsTXT = true
   github = "https://github.com/eloquent-programmer"
 
 [menu]
-
   [[menu.main]]
     identifier = "home"
     name = "Home"
@@ -30,5 +29,13 @@ enableRobotsTXT = true
     name = "about"
     url = "/about"
     weight = -100
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+    useSessionStorage = true
+  [privacy.twitter]
+    enableDNT = true
 
   
