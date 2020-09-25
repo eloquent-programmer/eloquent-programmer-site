@@ -2,3 +2,7 @@
 {{ with $stylesheet.css }}
   <link href="{{ . | relURL }}" rel="stylesheet" type="text/css">
 {{ end }}
+{{ if .RSSLink }}
+  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+{{ end }}
